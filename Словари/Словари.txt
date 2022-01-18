@@ -1,0 +1,2 @@
+Ссылки:
+https://pythonworld.ru/tipy-dannyx-v-python/slovari-dict-funkcii-i-metody-slovarej.html
