@@ -62,5 +62,7 @@ def enter_args(*names):
 enter_args("Лёша", "Петя", "Саша", "Вася")
 
 # **kwargs используются для передачи именованных аргументов
-def enter_kwargs(**some_info):
-    pass
+def show_pets(**pet):
+    for key, value in pet.items():
+        print(f"Животное - {key}, порода - {value}")
+show_pets(Кот="египетский", Пёс="облезший", Попуга="заебал")
