@@ -1,21 +1,22 @@
-a = (1, 3, 5, 7)
-b = ["раз", "два", "три", "четыре"]
-c = {"Имя": "Григорий", "Отчество": "Даунович", "Фамилия": "Васечкин"}
-print(type(a))
-print(type(b))
-print(type(c))
-
-print("------------")
-
-class Electronics:
+class A:
     def __init__(self):
-        self.item_type = "Technica"
-        self.item_rarity = "Rare"
+        self.length = 20
+        self.width = 5
+
+    def show_info(self):
+        print("Метод класса 'A'")
+        print(f"Длина: {self.length}, ширина: {self.width}")
 
 
-class TV(Electronics):
-    diag = "20 inches"
-    price = "$200"
+class B(A):
+    def __init__(self):
+        self.volume = 50
 
-samsung = TV()
-print(samsung.__dict__)
+    def show_info(self):
+        print("Метод класса 'B'")
+        print(f"Объём: {self.volume}")
+
+
+container = B()
+# При вызове метода show_info() класса B
+container.show_info()
