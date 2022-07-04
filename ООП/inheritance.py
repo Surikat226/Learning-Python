@@ -3,6 +3,7 @@ print("----------------------------")
 
 
 class Character:
+
     def __init__(self, name):
         self.name = name
         self.gender = "Мужчина"
@@ -42,6 +43,7 @@ print("----------------------------")
 
 
 class Mage(Character):
+
     def __init__(self, name):
         super().__init__(name)  # Наследуем атрибуты метода __init__() из родительского класса
         # Добавляем атрибуты, относящиеся к классу "Маг"

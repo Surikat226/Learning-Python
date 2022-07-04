@@ -10,6 +10,7 @@ class A:
 
 class B(A):
     def __init__(self):
+        super().__init__()
         self.volume = 50
 
     def show_info(self):
@@ -18,5 +19,4 @@ class B(A):
 
 
 container = B()
-# При вызове метода show_info() класса B
 container.show_info()
