@@ -32,6 +32,6 @@ print(list(some_string))
 
 print("=====================")
 
-"Преобразование аргументов в кортеж:"
+print("Преобразование аргументов в кортеж:")
 another_string = "Строка 2"
 print(tuple(another_string))
